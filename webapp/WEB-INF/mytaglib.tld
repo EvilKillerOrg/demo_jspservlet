@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd ">
+  <tlib-version>1.0</tlib-version>
+  <short-name>mytag</short-name>
+  <uri>http://www.ek.com</uri>
+  
+  <tag>
+  	<name>hello</name>
+  	<tag-class>com.ekstudy.taglib.MyTaglib</tag-class>
+  	<body-content>JSP</body-content><!-- 有标签体要写JSP 没有标签体写empty -->
+  	<attribute><!-- 给标签加属性 -->
+  		<name>name</name>
+  		<required>true</required><!-- 这个属性是否必填 -->
+  		<rtexprvalue>true</rtexprvalue><!-- 是否接收动态值 -->
+  		<type>java.lang.String</type>
+  	</attribute>
+  </tag>
+</taglib>
